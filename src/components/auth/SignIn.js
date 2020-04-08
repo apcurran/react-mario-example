@@ -21,7 +21,7 @@ export default class SignIn extends Component {
         return (
             <div className="container">
                 <form onSubmit={ this.handleSubmit } className="form">
-                    <h3 className="form__title">Sign In</h3>
+                    <h3 className="form__title">Log In</h3>
                     <div className="form__group">
                         <label htmlFor="email" className="form__group__label">Email</label>
                         <input onChange={ this.handleChange } type="email" name="email" id="email" className="form__group__input"/>

@@ -6,6 +6,7 @@
 
 :root {
   --med-grey: hsl(214, 20%, 60%);
+  --indigo: #5a67d8;
 }
 
 body,
@@ -17,6 +18,14 @@ textarea {
 p,
 textarea {
   line-height: 1.6;
+}
+
+body {
+  background: url(/images/mario-bg.png) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  background-color: #95e8f3;
+  min-height: 100vh;
 }
 
 .header {
@@ -48,16 +57,27 @@ textarea {
   margin: 0 .75rem;
 }
 
+.name-badge {
+  display: inline-block;
+  background-color: var(--indigo);
+  padding: .75rem;
+  border-radius: 50%;
+}
+
 .dashboard,
 .container {
-  max-width: 70rem;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 3rem 1rem;
 }
 
 /* Project Cards */
 .card {
+  max-width: 30rem;
   margin-bottom: 3rem;
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 .card__title {
@@ -87,7 +107,10 @@ textarea {
 
 /* Forms */
 .form {
-  max-width: 35rem;
+  max-width: 40rem;
+  padding: 1.75rem 2rem;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 .form__title {
@@ -127,6 +150,6 @@ textarea {
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #434190;
+  background-color: var(--indigo);
   color: #fff;
 }

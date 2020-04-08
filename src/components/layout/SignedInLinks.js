@@ -5,13 +5,13 @@ function SignedInLinks() {
     return (
         <ul className="nav__links-list">
             <li className="nav__links-item">
-                <NavLink to="/">New Project</NavLink>
+                <NavLink to="/create">New Project</NavLink>
             </li>
             <li className="nav__links-item">
                 <NavLink to="/">Log Out</NavLink>
             </li>
             <li className="nav__links-item">
-                <NavLink to="/">AC</NavLink>
+                <NavLink to="/" className="name-badge">AC</NavLink>
             </li>
         </ul>
     )
