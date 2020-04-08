@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --med-grey: hsl(214, 20%, 60%);
+}
+
 body {
   font-family: sans-serif;
+}
+
+p {
+  line-height: 1.6;
 }
 
 .header {
@@ -37,7 +45,8 @@ body {
   margin: 0 .75rem;
 }
 
-.dashboard {
+.dashboard,
+.container {
   max-width: 70rem;
   margin: 0 auto;
   padding: 3rem 1rem;
@@ -59,5 +68,61 @@ body {
 .card__post-date {
   font-size: .9rem;
   font-weight: 700;
-  color: hsl(214, 20%, 60%);
+  color: var(--med-grey);
+}
+
+.project-details {
+  max-width: 60rem;
+  margin: 3rem auto;
+}
+
+.project__info {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Forms */
+.form {
+  max-width: 35rem;
+}
+
+.form__title {
+  margin-bottom: 1.25rem;
+  font-size: 1.65rem;
+  font-weight: 400;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form__group__label {
+  margin-bottom: .25rem;
+  color: var(--med-grey);
+  font-weight: 700;
+}
+
+.form__group__input {
+  padding: .5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #EDF2F7;
+}
+
+.form__group__submit {
+  /* Left-align btn */
+  align-self: start;
+
+  padding: .8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #434190;
+  color: #fff;
 }
