@@ -8,11 +8,14 @@
   --med-grey: hsl(214, 20%, 60%);
 }
 
-body {
+body,
+button,
+textarea {
   font-family: sans-serif;
 }
 
-p {
+p,
+textarea {
   line-height: 1.6;
 }
 
