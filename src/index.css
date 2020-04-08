@@ -36,3 +36,28 @@ body {
 .nav__links-item {
   margin: 0 .75rem;
 }
+
+.dashboard {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* Project Cards */
+.card {
+  margin-bottom: 3rem;
+}
+
+.card__title {
+  margin-bottom: .75rem;
+}
+
+.card__posted-by {
+  margin-bottom: .25rem;
+}
+
+.card__post-date {
+  font-size: .9rem;
+  font-weight: 700;
+  color: hsl(214, 20%, 60%);
+}
