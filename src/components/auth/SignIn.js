@@ -2,15 +2,19 @@ import React, { Component } from 'react';
 
 export default class SignIn extends Component {
     state = {
-
+        email: null,
+        password: null
     };
 
     handleChange = (event) => {
-        console.log(event);
+        this.setState({
+            [event.target.id]: event.target.value
+        });
     }
 
     handleSubmit = (event) => {
-        console.log(event);
+        event.preventDefault();
+        console.log(this.state);
     }
 
     render() {

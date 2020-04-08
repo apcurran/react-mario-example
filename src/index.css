@@ -116,6 +116,7 @@ p {
 .form__group__submit {
   /* Left-align btn */
   align-self: start;
+  margin-top: .75rem;
 
   padding: .8rem 2rem;
   border: none;
