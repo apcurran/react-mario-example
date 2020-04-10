@@ -18,11 +18,16 @@ textarea {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 p,
 textarea {
   line-height: 1.6;
+}
+
+.error {
+  color: darkred;
 }
 
 body {
