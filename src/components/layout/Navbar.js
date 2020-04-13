@@ -12,7 +12,7 @@ function Navbar(props) {
         <header className="header">
             <nav className="nav">
                 <Link to="/" className="nav__logo">MarioPlan</Link>
-                { links }
+                { auth.isLoaded && links }
             </nav>
         </header>
     )
